@@ -1,0 +1,32 @@
+/*
+//refer the following below code for understanding how transform-class-properties plugin works
+//and place it inside src/app.js 
+
+//old syntax
+class Person {
+    constructor(name,age) {
+        this.name = name;
+        this.age = age;
+        this.displayDetails = this.displayDetails.bind(this);
+    }
+    displayDetails() {
+        return `${this.name} is ${this.age}yrs old`;
+    }
+}
+const person1 = new Person('prasad',26);
+const displayDetailsCustom = person1.displayDetails;
+console.log(displayDetailsCustom);
+console.log(displayDetailsCustom());
+
+//new syntax with the help of tranform-class-properties plugin
+class Student {
+    name = 'andrew';
+    getGreeting = () => {
+        return `hi ${this.name}`
+    }
+}
+const s1 = new Student();
+const getCustomGreeting = s1.getGreeting
+console.log(getCustomGreeting);
+console.log(getCustomGreeting());
+*/
