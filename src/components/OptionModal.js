@@ -10,5 +10,4 @@ const OptionModal = (props) =>  (
       </Modal>
     );
 
-
 export default OptionModal;

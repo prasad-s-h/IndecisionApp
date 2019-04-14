@@ -6,7 +6,8 @@ export default class Option extends React.Component {
       <div>
         {this.props.optionText}
         <button
-          onClick={e => {
+          className="button button--link"
+          onClick={(e) => {
             e.preventDefault();
             this.props.handleDeleteOption(this.props.optionText);
           }}
